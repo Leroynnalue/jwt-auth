@@ -1,0 +1,16 @@
+---
+import Form from "../layouts/Form.astro";
+import InputField from "../components/InputField.astro";
+---
+
+<Form
+  title="Sign In"
+  subtitle="Sign in to your account to continue"
+  redirectInfo="Create an account"
+  redirectLink="/register/"
+  action="/welcome/"
+>
+  <InputField type="text" placeholder="Email Address" />
+  <InputField type="password" placeholder="Password" />
+  <InputField type="submit" value="Sign In" />
+</Form>

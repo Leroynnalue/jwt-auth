@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node server/server.js",
-    "dev": "nodemon server/server.js"
+    "dev": "nodemon server/server.js",
+    "client": "npm run dev --prefix client"
   },
   "keywords": [],
   "author": "ALIENXROY",
