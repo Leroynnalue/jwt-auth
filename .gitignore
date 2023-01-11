@@ -3,3 +3,6 @@ node_modules
 
 # environ varbs
 .env
+
+# front-end 
+client
