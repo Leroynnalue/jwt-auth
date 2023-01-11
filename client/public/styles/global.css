@@ -7,6 +7,19 @@ html,body{
     font-family: 'Manrope', sans-serif;
 }
 
+
+.primary-bg{
+  background-color:#007CD5;
+}
+
+.primary-text{
+  color:#007CD5;
+}
+
+.secondary{
+  color:#94928f;
+}
+
 .montserrat {
   font-family: 'Montserrat', sans-serif;
 }

@@ -20,6 +20,7 @@
     "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^8.5.1",
     "mysql2": "^2.3.3",
+    "react-router-dom": "^6.6.1",
     "sequelize": "^6.27.0",
     "tedious": "^15.1.2",
     "uuid": "^9.0.0"

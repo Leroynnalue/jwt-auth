@@ -2,27 +2,38 @@
 import MinimalNavbar from "./MinimalNavbar.astro";
 ---
 
-<aside class="w-1/4 h-full border-r-2 border-black">
+<aside
+  class="md-w-full w-1/4 h-full border-r-[.01em] flex flex-col justify-between border-neutral-400"
+>
   <!-- Navbar -->
   <MinimalNavbar />
+
   <hr />
+
   <!-- Input Thought -->
-  <section class="w-5/6 h-24 flex flex-col mx-auto my-4">
+  <section class="xl-hidden w-5/6 h-24 flex flex-col mx-auto my-4">
     <input
       type="text"
       class="w-full text-[1.15em] outline-none border-b-2 my-2"
       placeholder="Type to search"
     />
-    <button class="bg-[#007CD5] text-[1.15em] p-2 rounded-md">Add New</button>
+    <a
+      href="/thought/"
+      class="bg-[#007CD5] text-white text-center cursor-pointer text-[1.15em] p-2 rounded-md"
+      >Add New</a
+    >
   </section>
+
   <hr />
+
   <!-- Collection Of Thoughts -->
-  <section class="w-5/6 h-3/4 overflow-y-auto flex flex-col mx-auto my-4">
-    <section class="w-full flex flex-col cursor-pointer my-4">
+  <section class="w-5/6 h-3/5 overflow-y-auto flex flex-col mx-auto my-4">
+    <!-- Thought One -->
+    <a class="w-full flex flex-col my-4" href={`/thought/?id=${1}`}>
       <section class="w-full flex justify-between items-start">
         <h1 class="font-[500] text-[1.15em]">Lorem Ipsum</h1>
         <span
-          class="bg-[#007CD5] px-[.4em] py-[.2em] rounded-sm font-[500] text-white text-[1em]"
+          class="bg-blue-300 px-[.4em] py-[.2em] rounded-md font-[500] text-white text-[1em]"
         >
           10-10-2022</span
         >
@@ -31,9 +42,11 @@ import MinimalNavbar from "./MinimalNavbar.astro";
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
         accusantium.
       </p>
-    </section>
+    </a>
   </section>
+
   <hr />
+
   <!-- Footer Section -->
   <section
     class="w-5/6 h-12 bg-red-300 overflow-y-auto flex flex-col mx-auto my-4"
