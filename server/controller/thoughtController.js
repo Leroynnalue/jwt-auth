@@ -2,13 +2,17 @@ import asyncHandler from 'express-async-handler'
 
 // importing models
 import Thought from "../models/thoughtModel.js"
+import User from "../models/userModel.js"
 
 // @desc    get thoughts
 export const getThoughts = asyncHandler(async (req, res) => {
+    const userID = req.user.id
+
     const thoughts = await Thought.findAll({
-        where: {
-            userID: req.user.id
-        }
+        include: [{
+            model: User
+        }],
+        where: { userID }
     })
 
     res.json({
