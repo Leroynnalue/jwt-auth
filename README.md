@@ -1,2 +1,2 @@
-# Thoughts
+# JWT-AUTH
 ---
